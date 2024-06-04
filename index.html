@@ -1,73 +1,270 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
 </head>
-    <title>Portfolio</title>
-    <link href="styles.css" rel="stylesheet">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    
 <body>
+    <nav id="desktop-nav">
+        <div class="logo">JJ Perater</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+        <div class="logo">JJ Perater</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span> </span>
+            <span></span>
+            <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Profile pic">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">
+                  Hello, I'm  
+            </p>
+            <h1 class="name">Jasper Jay</h1>
+            <p class="section__text_p2">Frontend Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+
+                <button class="btn btn-color-2" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://linkedin.com/'"/>
+
+                <img src="./assets/github.png" alt="github" class="icon" onclick="location.href='https://github.com/'"/>
+            </div>
+        </div>
+    </section>
+
+   
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Profile pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="" class="icon">
+                    <h3>Experience</h3>
+                    <p>1+ year<br> Software Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="" class="icon">
+                        <h3>Education</h3>
+                        <p>B.Sc. Bacherlors Degree in <br>Information Technology</p>
+
+                    </div>
+                </div>
+
+                <div class="text-container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero sequi et accusantium perspiciatis a quidem facilis consequatur commodi! Adipisci qui fugit nemo officia cumque voluptatibus minima, quo veniam impedit, eos voluptatum officiis. Ea sunt porro hic mollitia ab, rerum reiciendis laudantium, dicta natus minima aut omnis eum consequuntur dolorum! Pariatur.</p>
+                </div>
+            </div>
+
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#experience'">
+    </section>
+
+     <section id="experience">
+        <p class="section__text__p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="details-containers">
+                <h2 class="exprience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+
+                            <div>
+                                <h3>API</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="" class="icon">
+
+                            <div>
+                                <h3>JQuery</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                    </div>
+            </div>
+
+            <div class="details-containers">
+            <h2 class="exprience-sub-title">Back-end Development</h2>
+            <div class="article-container">
+                
+                <article>
+                    <img src="./assets/checkmark.png" alt="" class="icon">
+
+                    <div>
+                        <h3>Python</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="" class="icon">
+
+                    <div>
+                        <h3>mySQL</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="" class="icon">
+
+                    <div>
+                        <h3>Odoo</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="" class="icon">
+
+                    <div>
+                        <h3>GIT</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="" class="icon">
+
+                    <div>
+                        <h3>Postgre SQL</h3>
+                        <p>Basic</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="" class="icon">
+
+                    <div>
+                        <h3>JSON</h3>
+                        <p>Experienced</p>
+                    </div>
+                </article>
+            </div>
+            </div>
+        </div>
+        </div>
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+    <section id="projects">
+
+        <p class="section__text__p1">Browse my recent</p>
+        <h1 class="title">Projects</h1>
+
+        <div class="project_container">
+            <ul>
+                <li>
+                    <div class="project1">
+                        <div class="img_holder"><img src="assets/tiktok_project.png" alt="project1"></div>
+                        
+                        <div class="project_name">
+                            Tiktok Feed Clone
+                        </div>
+                        
+                        <div class="project_btn">
+                            <a href="https://jperater123.github.io/tiktokclone/"><div class="demo_btn">DEMO</div></a>
+                            <a href="https://github.com/jperater123/tiktokclone"><div class="demo_btn">GITHUB</div></a>
+                        </div>
+                       
+                </li>
+                <li>
+                    <div class="project1">
+                        <div class="img_holder"><img src="https://placehold.jp/150x150.png" alt="project1"></div>
+                        
+                        <div class="project_name">
+                            Project 1
+                        </div>
+                        
+                        <div class="project_btn">
+                            <a href="https://jperater123.github.io/tiktokclone/"><div class="demo_btn">DEMO</div></a>
+                            <a><div class="demo_btn">GITHUB</div></a>
+                        </div>
+                </li>
+                <li>
+                    <div class="project1">
+                        <div class="img_holder"><img src="https://placehold.jp/150x150.png" alt="project1"></div>
+                        
+                        <div class="project_name">
+                            Project 1
+                        </div>
+                        
+                        <div class="project_btn">
+                            <a href="https://jperater123.github.io/tiktokclone/"><div class="demo_btn">DEMO</div></a>
+                            <a><div class="demo_btn">GITHUB</div></a>
+                        </div>
+                </li>
+            </ul>
+        </div>
+
+        <img src="./assets/arrow.png" alt="arrow" class="icon arrow" onclick="location.href='./#projects'">
+    </section>
+
+
     <script src="script.js"></script>
-    <header class="header">
-        <a href="#" class="logo">J. Perater</a>
-
-        <nav class="navbar">
-            <a href="#" class="active">Home</a>
-            <a href="#aboutme">About</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
-            
-        </nav>
-    </header>
-
-    <section class="home">
-        <div class="home-image">
-            <img src="profile.png" alt="Profile.png">
-        </div>
-
-        <div class="home-content">
-            <h1>Hi, I'm Jasper Jay</h1>
-            <h3>Software Developer</h3>
-            <p>Highly motivated and skilled software developer
-                with a genuine passion for creating innovative
-                software solutions, web applications, and mobile
-                apps. Committed to delivering high-quality code
-                and constantly seeking opportunities for personal
-                and professional growth. A dedicated team player
-                who thrives in collaborative environments</p>
-
-            <div class="home-sci">
-                <a href="https:/facebook.com/jasperjay.perater" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-
-            </div>
-            <a href="#" class="btn" id="download_cv">Download CV</a>
-        </div>
-    </section>
-
-    <section class="home" id="aboutme">
-        <div ></div>
-        <div class="home-image">
-            <img src="profile.png" alt="Profile.png">
-        </div>
-
-        <div class="home-content">
-            <h1>About me</h1>
-            <h3>Software Developer</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit odio expedita molestias sit mollitia quisquam, ea reiciendis vitae consequatur veritatis ad accusamus a fugiat voluptate soluta amet tenetur, aliquid animi.</p>
-
-            <div class="home-sci">
-                <a href="https:/facebook.com/jasperjay.perater" target="_blank"><i class='bx bxl-facebook-circle'></i></a>
-                <a href="#"><i class='bx bxl-twitter' ></i></a>
-                <a href="#"><i class='bx bxl-instagram' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-
-            </div>
-            <a href="#" class="btn">Download CV</a>
-        </div>
-    </section>
 </body>
 </html>
